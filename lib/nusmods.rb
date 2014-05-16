@@ -12,7 +12,7 @@ class NUSMods
   def get_module_codes(year, semester)
     endpoint = "http://api.nusmods.com/#{year}-#{year + 1}/#{semester}/moduleCodes.json"
     begin
-      @module_codes = fetch_json(endpoint) if @module_codes.nil?
+      fetch_json(endpoint)
     rescue
       raise "The requested resource is not available for the given year or semester."
     end
@@ -22,7 +22,7 @@ class NUSMods
   def get_module_codes_with_names(year, semester)
     endpoint = "http://api.nusmods.com/#{year}-#{year + 1}/#{semester}/moduleList.json"
     begin
-      @module_codes_with_names = fetch_json(endpoint) if @module_codes_with_names.nil?
+      fetch_json(endpoint)
     rescue
       raise "The requested resource is not available for the given year or semester."
     end
@@ -32,7 +32,7 @@ class NUSMods
   def get_faculty_departments(year, semester)
     endpoint = "http://api.nusmods.com/#{year}-#{year + 1}/#{semester}/facultyDepartments.json"
     begin
-      @faculty_departments = fetch_json(endpoint) if @faculty_departments.nil?
+      fetch_json(endpoint)
     rescue
       raise "The requested resource is not available for the given year or semester."
     end
@@ -41,7 +41,7 @@ class NUSMods
   def get_lesson_types(year, semester)
     endpoint = "http://api.nusmods.com/#{year}-#{year + 1}/#{semester}/lessonTypes.json"
     begin
-      @lesson_types = fetch_json(endpoint) if @lesson_types.nil?
+      fetch_json(endpoint)
     rescue
       raise "The requested resource is not available for the given year or semester."
     end
@@ -50,7 +50,7 @@ class NUSMods
   def get_module_details(year, semester, module_code)
     endpoint = "http://api.nusmods.com/#{year}-#{year + 1}/#{semester}/modules/#{module_code}.json"
     begin
-      @module_details = fetch_json(endpoint) if @module_details.nil?
+      fetch_json(endpoint)
     rescue
       raise "The requested resource is not available for the given year or semester."
     end
@@ -59,7 +59,7 @@ class NUSMods
   def get_modules(year, semester)
     endpoint = "http://api.nusmods.com/#{year}-#{year + 1}/#{semester}/modules.json"
     begin
-      @modules = fetch_json(endpoint) if @modules.nil?
+      fetch_json(endpoint)
     rescue
       raise "The requested resource is not available for the given year or semester."
     end
