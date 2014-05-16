@@ -1,6 +1,9 @@
+$LOAD_PATH.unshift File.dirname(__FILE__)
+require 'lib/nusmods/version'
+
 Gem::Specification.new do |s|
   s.name        = 'nusmods'
-  s.version     = '0.0.1'
+  s.version     =  Nusmods::VERSION
   s.date        = '2014-05-16'
   s.summary     = "Making use of the NUSModsAPI, this gem simplifies the data collection and streamlines it into your ruby program."
   s.description = "See summary."
