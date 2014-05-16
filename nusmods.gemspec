@@ -5,8 +5,8 @@ Gem::Specification.new do |s|
   s.name        = 'nusmods'
   s.version     =  Nusmods::VERSION
   s.date        = '2014-05-16'
-  s.summary     = "Making use of the NUSModsAPI, this gem simplifies the data collection and streamlines it into your ruby program."
-  s.description = "See summary."
+  s.summary     = "A ruby interface for NUSModsAPI." 
+  s.description = "This rubygem aims to provide an easier way to fetch data from the NUSMods API, especially if you're building ruby apps."
   s.authors     = ["Jingwen Chen"]
   s.email       = 'jin@crypt.sg'
   s.files       = ["lib/nusmods.rb"]
