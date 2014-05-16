@@ -10,20 +10,18 @@ NUSModsAPI repository: https://github.com/ahbeng/NUSModsAPI
 
 ---
 
-Description:
-
 This rubygem aims to provide an easier way to fetch data from the NUSMods API,
 especially if you're building ruby apps.
 
 Installation:
 
-``sh
+```sh
 gem install nusmods
-``
+```
 
 Usage:
 
-``rb
+```rb
 2.1.1 :001 > require 'nusmods'
  => true
 2.1.1 :002 > nm = NUSMods.new
@@ -32,7 +30,7 @@ Usage:
 nm.get_faculty_departments      nm.get_module_codes_with_names
 nm.get_lesson_types             nm.get_module_details
 nm.get_module_codes             nm.get_modules
-``
+```
 
 Methods:
 
