@@ -49,4 +49,4 @@ All `get_` methods takes in parameters in the following order: `year`, `semester
 For more details, see [NUSModsAPI's README.][1]
 
 
-  [1]: https://github.com/ahbeng/NUSModsAPI/blob/master/README.md`
+  [1]: https://github.com/ahbeng/NUSModsAPI/blob/master/README.md
