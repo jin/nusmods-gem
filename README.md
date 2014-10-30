@@ -3,8 +3,7 @@ A ruby wrapper for the NUSModsAPI
 
 ### Disclaimer 
 
-This gem is not maintained by the creator of NUSMods. It is still
-at the conceptualization stage; more features will be added in due time.
+This gem is not maintained by the creator of NUSMods.
 
 NUSModsAPI repository: https://github.com/ahbeng/NUSModsAPI
 
