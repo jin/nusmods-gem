@@ -1,7 +1,9 @@
+require 'nusmods/endpoints'
+require 'active_support/notifications'
+
 module NUSMods
   class Client
 
-    include Defaults
     include Endpoints
 
     def initialize(opts = {})
