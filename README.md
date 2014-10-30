@@ -87,7 +87,7 @@ suggested that you download a copy from the API directly and store it locally.
 client.get_modules(year = 2014, semester = 1)
 ```
 
-For more details, see [NUSModsAPI's README.][1]
+For exact response examples or more details, see [NUSModsAPI's README.][1]
 
 
   [1]: https://github.com/ahbeng/NUSModsAPI/blob/master/README.md
