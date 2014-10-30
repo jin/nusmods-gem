@@ -1,6 +1,9 @@
 module NUSMods
   module Endpoints
 
+    CURRENT_YEAR = 2014
+    CURRENT_SEMESTER = 1
+
     # Returns a Array of all module codes in the given year and semester
     def get_module_codes(year = CURRENT_YEAR, semester = CURRENT_SEMESTER)
       get "#{format_year(year)}/#{semester}/moduleCodes.json"
