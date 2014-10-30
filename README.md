@@ -1,4 +1,4 @@
-A ruby wrapper for the NUSModsAPI
+A ruby wrapper for the NUSModsAPI (v0.0.3)
 ---
 
 ### Disclaimer 
