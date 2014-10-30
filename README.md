@@ -51,8 +51,10 @@ client.get_module_details("MA1101R").keys
 
 Retrieves the list of faculty departments/sub-departments in a `Hash`.
 
-```rb
+```ruby
 client.get_faculty_departments(year = 2014, semester = 1)
+
+# => {"Arts & Social Sciences"=>["Centre For Language Studies", "Chinese Studies", "Communications And New Media", "Dean's Office (Arts & Social Sc.)", ...
 ```
 
 #### Lesson Types
@@ -62,30 +64,34 @@ specific AY or semester.
 
 ```rb
 client.get_lesson_types
+# => {"DESIGN LECTURE"=>"Tutorial", "LABORATORY"=>"Tutorial", "LECTURE"=>"Lecture" ... 
 ```
 
 #### Module codes
 
 Retrieves a list of all module codes offered in the semester in an `Array`.
 
-```rb
+```ruby
 client.get_module_codes(year = 2014, semester = 1)
+# => ["ACC1002", "ACC1002X", "ACC2002", "ACC3601", "ACC3602", ...
 ```
 
 #### Module codes with names
 
 Retrieves a list of all module codes accompanied by their names in an `Array`.
 
-```rb
+```ruby
 client.get_module_codes_with_names(year = 2014, semester = 1)
+# => {"ACC1002"=>"Financial Accounting", "ACC1002X"=>"Financial Accounting", "ACC2002"=>"Managerial Accounting" ...
 ```
 
 #### Module details
 
 Retrieves all information about a specific module in a `Hash`
 
-```rb
+```ruby
 client.get_module_details("MA1101R", year = 2014, semester = 1)
+# => {"ModuleCode"=>"MA1101R", "ModuleTitle"=>"Linear Algebra I", "Department"=>"Mathematics", ...
 ```
 
 #### All modules
@@ -94,8 +100,9 @@ Retrieves all information about every module in an `Array`.
 Note: This retrieves a large dataset, so it will take a while. It is highly
 suggested that you download a copy from the API directly and store it locally.
 
-```rb
+```ruby
 client.get_modules(year = 2014, semester = 1)
+# => [{ "ModuleCredit" => "4", "ModmavenTree" => { "name" => "ACC1002", "children" => [] }, "LockedModules" => [ "FIN3113", "ACC2002", "IS5116", "FIN2004", ...
 ```
 
 For exact response examples or more details, see [NUSModsAPI's README.][1]
