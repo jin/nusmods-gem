@@ -1,5 +1,6 @@
-$LOAD_PATH.unshift File.dirname(__FILE__)
-require 'lib/nusmods/version'
+lib = File.expand_path('../lib', __FILE__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+require 'nusmods/version'
 
 Gem::Specification.new do |s|
   s.name        = 'nusmods'
@@ -13,4 +14,7 @@ Gem::Specification.new do |s|
   s.homepage    =
     'http://rubygems.org/gems/nusmods'
   s.license       = 'MIT'
+
+  s.files = `git ls-files -z`.split("\x0")
+  s.require_paths = %w( lib )
 end
