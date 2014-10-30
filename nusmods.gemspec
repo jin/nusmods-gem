@@ -17,4 +17,7 @@ Gem::Specification.new do |s|
 
   s.files = `git ls-files -z`.split("\x0")
   s.require_paths = %w( lib )
+  s.add_dependency 'faraday'
+  s.add_dependency 'faraday_middleware'
+  s.add_dependency 'activesupport'
 end
