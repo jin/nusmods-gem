@@ -5,7 +5,7 @@ A ruby wrapper for the NUSModsAPI (v0.0.3)
 
 This gem is not maintained by the creator of NUSMods.
 
-NUSModsAPI repository: https://github.com/ahbeng/NUSModsAPI
+NUSModsAPI repository: [https://github.com/nusmodifications/nusmods-api](https://github.com/nusmodifications/nusmods-api)
 
 ---
 
@@ -105,10 +105,10 @@ client.get_modules(year = 2014, semester = 1)
 # => [{ "ModuleCredit" => "4", "ModmavenTree" => { "name" => "ACC1002", "children" => [] }, "LockedModules" => [ "FIN3113", "ACC2002", "IS5116", "FIN2004", ...
 ```
 
-For exact response examples or more details, see [NUSModsAPI's README.][1]
+For exact response examples or more details, see [NUSMods API's README.][1]
 
 
-  [1]: https://github.com/ahbeng/NUSModsAPI/blob/master/README.md
+  [1]: https://github.com/nusmodifications/nusmods-api/blob/master/README.md
 
 
 ### Tests:
