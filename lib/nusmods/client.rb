@@ -12,8 +12,10 @@ module NUSMods
 
     private
 
+    attr_accessor :conn
+
     def connection
-      Faraday.new(url: @base_url) do |f|
+      @conn ||= Faraday.new(url: @base_url) do |f|
         f.response :json, :content_type => /\bjson$/
         f.use :instrumentation
         f.adapter Faraday.default_adapter
