@@ -23,6 +23,9 @@ gem 'nusmods'
 
 then, run `bundle install`.
 
+### Changes in 0.0.4
+
+- Switched Faraday to HTTParty.
 
 ### Usage
 
