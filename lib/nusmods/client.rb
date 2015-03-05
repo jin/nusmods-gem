@@ -1,5 +1,6 @@
+require 'httparty'
+require 'json'
 require 'nusmods/endpoints'
-require 'active_support/notifications'
 
 module NUSMods
   class Client
@@ -12,19 +13,9 @@ module NUSMods
 
     private
 
-    attr_accessor :conn
-
-    def connection
-      @conn ||= Faraday.new(url: @base_url) do |f|
-        f.response :json, :content_type => /\bjson$/
-        f.use :instrumentation
-        f.adapter Faraday.default_adapter
-      end
-    end
-
     def get(url)
-      response = connection.get url
-      response.body
+      response_body = HTTParty.get(@base_url + url).body
+      JSON.parse(response_body)
     end
 
     # Converts a provided year to the API requirements
